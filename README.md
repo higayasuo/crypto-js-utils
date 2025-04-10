@@ -1,11 +1,11 @@
-# crypto-js-utils
+# @higayasuo/crypto-js-utils
 
 A collection of utilities for crypto-js.
 
 ## Installation
 
 ```bash
-npm install crypto-js-utils
+npm install @higayasuo/crypto-js-utils
 ```
 
 ### Peer Dependencies
@@ -19,7 +19,10 @@ npm install crypto-js
 ## Usage
 
 ```typescript
-import { uint8ArrayToWordArray, wordArrayToUint8Array } from 'crypto-js-utils';
+import {
+  uint8ArrayToWordArray,
+  wordArrayToUint8Array,
+} from '@higayasuo/crypto-js-utils';
 
 // Convert Uint8Array to WordArray
 const u8arr = new Uint8Array([0x12, 0x34, 0x56, 0x78]);
@@ -36,7 +39,7 @@ const backToUint8Array = wordArrayToUint8Array(wordArray);
 Converts a Uint8Array to a CryptoJS WordArray.
 
 ```typescript
-import { uint8ArrayToWordArray } from 'crypto-js-utils';
+import { uint8ArrayToWordArray } from '@higayasuo/crypto-js-utils';
 
 const u8arr = new Uint8Array([0x12, 0x34, 0x56, 0x78]);
 const wordArray = uint8ArrayToWordArray(u8arr);
@@ -47,7 +50,7 @@ const wordArray = uint8ArrayToWordArray(u8arr);
 Converts a CryptoJS WordArray to a Uint8Array.
 
 ```typescript
-import { wordArrayToUint8Array } from 'crypto-js-utils';
+import { wordArrayToUint8Array } from '@higayasuo/crypto-js-utils';
 
 const wordArray = CryptoJS.lib.WordArray.create([0x12345678], 4);
 const u8arr = wordArrayToUint8Array(wordArray);
