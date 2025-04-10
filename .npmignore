@@ -1,0 +1,27 @@
+# Development
+src/
+__tests__/
+.github/
+.vscode/
+.idea/
+
+# Config files
+.gitignore
+.npmignore
+tsconfig.json
+tsconfig.build.json
+vite.config.ts
+
+# Test files
+*.spec.ts
+coverage/
+
+# Documentation
+docs/
+*.md
+!README.md
+
+# Misc
+.DS_Store
+.env*
+*.log
